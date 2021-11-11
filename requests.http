@@ -1,0 +1,220 @@
+//dish-category-routes test
+
+###
+POST http://localhost:3000/api/dish-categories/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoryName": "Entrada2",
+    "categoryDescription": "Descripción de la Entrada2"
+}
+
+###
+GET http://localhost:3000/api/dish-categories HTTP/1.1
+
+###
+GET http://localhost:3000/api/dish-categories/618d1feaa55d2c958d3b05b5 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/dish-categories/delete/618d266b4cf7d024c5597a92 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/dish-categories/update/618d313298c6215db14115d3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "categoryName": "Entrada3",
+    "categoryDescription": "Descripción de la Entrada3"
+}
+
+
+//rol-routes test
+
+###
+POST http://localhost:3000/api/roles/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "rolName": "User16",
+    "rolDescription": "Descripción del User16"
+}
+
+###
+GET http://localhost:3000/api/roles HTTP/1.1
+
+###
+GET http://localhost:3000/api/roles/618c50185301774f4519daf4 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/roles/delete/618c5cbff922b805b717586e HTTP/1.1
+
+###
+PUT http://localhost:3000/api/roles/update/618c5c4b26a0c42c2ece8b4b HTTP/1.1
+Content-Type: application/json
+
+{
+    "rolName": "User19",
+    "rolDescription": "Descripción del User19"
+}
+
+
+//dish-routes test
+
+###
+POST http://localhost:3000/api/dishes/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "dishName": "Plato2",
+    "dishDescription": "Descripción del Plato2",
+    "price": 5000,
+    "dishState": 1
+}
+
+###
+GET http://localhost:3000/api/dishes HTTP/1.1
+
+###
+GET http://localhost:3000/api/dishes/618d3c242cd60185642f768b HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/dishes/delete/618d3c60fac82707c1fb21dd HTTP/1.1
+
+###
+PUT http://localhost:3000/api/dishes/update/618d3c9efac82707c1fb21df HTTP/1.1
+Content-Type: application/json
+
+{
+    "dishName": "Plato2",
+    "dishDescription": "Descripción del Plato2",
+    "price": 7000,
+    "dishState": 0
+}
+
+
+//order-details-routes  test
+
+###
+POST http://localhost:3000/api/order-details/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "unitPrice": 5000,
+    "quantity": 3,
+    "discount": 5
+}
+
+###
+GET http://localhost:3000/api/order-details HTTP/1.1
+
+###
+GET http://localhost:3000/api/order-details/618d431f67390baeb54f5724 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/order-details/delete/618d431f67390baeb54f5724 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/order-details/update/618d42f567390baeb54f5721 HTTP/1.1
+Content-Type: application/json
+
+{
+    "unitPrice": 7000,
+    "quantity": 7,
+    "discount": 15
+}
+
+
+//order-routes test
+
+###
+POST http://localhost:3000/api/orders/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "orderDate": "1999, 04, 25"
+}
+
+###
+GET http://localhost:3000/api/orders HTTP/1.1
+
+###
+GET http://localhost:3000/api/orders/618d4a83c080b387de74ccf7 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/orders/delete/618d7376b24bd3b8d65fbf75 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/orders/update/618d73beb24bd3b8d65fbf80 HTTP/1.1
+Content-Type: application/json
+
+{
+    "orderDate": "1999, 04, 27"
+}
+
+
+//table-routes test
+
+###
+POST http://localhost:3000/api/tables/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "tableNumber": 2,
+    "qr": "qr Mesa2",
+    "tableChairs": 4
+}
+
+###
+GET http://localhost:3000/api/tables HTTP/1.1
+
+###
+GET http://localhost:3000/api/tables/618d775c3fd101165197f914 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/tables/delete/618d76da3fd101165197f912 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/tables/update/618d775c3fd101165197f914  HTTP/1.1
+Content-Type: application/json
+
+{
+    "tableNumber": 1,
+    "qr": "qr Mesa1",
+    "tableChairs": 4
+}
+
+
+//user-routes test
+
+###
+POST http://localhost:3000/api/users/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "userFirstName": "Alberto",
+    "userLastName": "Durán",
+    "userAge": 35,
+    "userEmail": "alberto@gmail.com",
+    "userPassword": "alberto123"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+GET http://localhost:3000/api/users/618d7bb92b9ed50e1efb234f  HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/users/delete/618d7bb92b9ed50e1efb234f  HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/update/618d7bd22b9ed50e1efb2351  HTTP/1.1
+Content-Type: application/json
+
+{
+    "userFirstName": "Carlos",
+    "userLastName": "Díaz",
+    "userAge": 25,
+    "userEmail": "carlos@gmail.com",
+    "userPassword": "carlos123"    
+}
